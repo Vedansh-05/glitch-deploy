@@ -51,7 +51,6 @@ const overlapTimer = this.time.addEvent({
       )
     ) {
       if (!this.isHiding) {
-        console.log("Player hit by spotlight beam!");
         this.gameOver();
       }
     }
