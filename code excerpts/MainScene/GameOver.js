@@ -1,6 +1,6 @@
 // Get player color before we change it (for the blast effect)
 const playerColor = this.player.tintTopLeft || 0xffffff;
-  
+
 // Create the blast effect at player position
 this.createBlastEffect(this.player.x, this.player.y, playerColor);
 

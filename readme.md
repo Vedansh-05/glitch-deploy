@@ -40,3 +40,46 @@ Follow these steps to set up and run the project:
    ```bash
    git clone https://github.com/your-username/glitch-and-go.git
    cd glitch-and-go
+   ```
+
+2. **Install Dependencies**  
+   Make sure you have Node.js installed, then run:  
+   ```bash
+   npm install
+   ```
+
+3. **Run the Development Server**  
+   Start the Vite development server:  
+   ```bash
+   npm run dev
+   ```
+
+4. **Open the Game**  
+   Open your browser and navigate to `http://localhost:5173`.
+
+---
+
+## Deploying with Docker
+
+To deploy the game using Docker, follow these steps:
+
+1. **Build the Docker Image**  
+   Run the following command to build the Docker image:  
+   ```bash
+   docker build -t glitch-go-game .
+   ```
+
+2. **Run the Docker Container**  
+   Start the container and expose it on port 3000:  
+   ```bash
+   docker run -p 3000:3000 glitch-go-game
+   ```
+
+3. **Access the Game**  
+   Open your browser and navigate to `http://localhost:3000` to play the game.
+
+4. **Using Docker Compose (Optional)**  
+   If you have a `docker-compose.yml` file, you can start the container with:  
+   ```bash
+   docker-compose up --build
+   ```
