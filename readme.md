@@ -72,14 +72,8 @@ To deploy the game using Docker, follow these steps:
 2. **Run the Docker Container**  
    Start the container and expose it on port 3000:  
    ```bash
-   docker run -p 3000:3000 glitch-go-game
+   docker run -p 5173:5173 glitch-go-game
    ```
 
 3. **Access the Game**  
-   Open your browser and navigate to `http://localhost:3000` to play the game.
-
-4. **Using Docker Compose (Optional)**  
-   If you have a `docker-compose.yml` file, you can start the container with:  
-   ```bash
-   docker-compose up --build
-   ```
+   Open your browser and navigate to `http://localhost:5173` to play the game.
